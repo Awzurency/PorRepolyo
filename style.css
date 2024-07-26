@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    position: absolute;
+    max-width: 20%;
+    height: auto;
+    transform: translate(1080px, 340px);
+}
+nav{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 50px;
+    left: 550px;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: "Poppins";
+    font-weight: 550;
+    z-index: 1000;
+}
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 10px; /* Optional: Add some space between items */
+}
+nav a {
+    text-decoration: none; /* Remove default link styling */
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+nav a:hover {
+    color: #0055ff;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 5rem;
+    background: #0055ff;
+    transition: 0.3s ease-in;
+  } 
+  nav a:hover::after {
+    width: 100%;
+  }
+
+#top{
+    position: absolute;
+    max-width: 85%;
+    height: auto;
+    transform: translate(-50px, -85px);
+}
+#bot{
+    position: absolute;
+    max-width: 85%;
+    height: auto;
+    transform: translate(290px, -148px);
+    z-index: -1;
+}
+#name{
+    position: absolute;
+    max-width: 55%;
+    height: auto;
+    transform: translate(150px, 150px);
+
+}
+section{
+    height: 100vh;
+    display: flex;
+}
+p{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 550;
+    transform: translate(150px, 320px);
+}
+#introduction{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 430;
+    transform: translate(191px, 550px);
+}
+#github{
+    position: absolute;
+    max-width: 50px;
+    height: auto;
+    transform: translate(1820px, 250px);
+}
+#linkedin{
+    position: absolute;
+    max-width: 50px;
+    height: auto;
+    transform: translate(1822px, 350px);
+}
+#github:hover {
+    transform: translate(1820px, 250px) scale(1.1); /* Scale up by 10% on hover */
+}
+#linkedin:hover {
+    transform: translate(1822px, 350px) scale(1.1); /* Scale up by 10% on hover */
+}
+h1{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-size: 60px;
+    font-weight: 550;
+    transform: translate(900px, 10px);
+}
